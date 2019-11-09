@@ -1,14 +1,14 @@
 \documentclass{article}%
-\usepackage{amsmath}%
-\setcounter{MaxMatrixCols}{30}%
-\usepackage{amsfonts}%
-\usepackage{amssymb}%
-\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}%
+\setcounter{MaxMatrixCols}{30}
 %TCIDATA{OutputFilter=latex2.dll}
 %TCIDATA{Version=5.50.0.2953}
 %TCIDATA{CSTFile=40 LaTeX article.cst}
 %TCIDATA{Created=Saturday, November 09, 2019 14:35:30}
-%TCIDATA{LastRevised=Saturday, November 09, 2019 14:45:26}
+%TCIDATA{LastRevised=Saturday, November 09, 2019 15:57:36}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
@@ -57,16 +57,7 @@ y_{3}\\
 \vdots\\
 y_{n}%
 \end{array}
-\right]  =\left[
-\begin{array}
-[c]{cccc}%
-1 & x_{1,1} & \cdots & x_{1,k}\\
-1 & x_{2,1} & \cdots & x_{2,k}\\
-1 & x_{3,1} & \cdots & x_{3,k}\\
-\vdots & \vdots & \ddots & \vdots\\
-1 & x_{n,1} & \cdots & x_{n,k}%
-\end{array}
-\right]  \left[
+\right]  =\left[  {}\right]  \left[
 \begin{array}
 [c]{c}%
 \beta_{0}\\
@@ -84,4 +75,41 @@ u_{3}\\
 u_{n}%
 \end{array}
 \right]  $
+
+\bigskip
+
+$E[\mathbf{u}|\mathbf{X}]=\left[
+\begin{array}
+[c]{c}%
+E[u_{1}|\mathbf{X}]\\
+E[u_{2}|\mathbf{X}]\\
+E[u_{3}|\mathbf{X}]\\
+\vdots\\
+E[u_{n}|\mathbf{X}]
+\end{array}
+\right]  =\left[
+\begin{array}
+[c]{c}%
+0\\
+0\\
+0\\
+\vdots\\
+0
+\end{array}
+\right]  $
+
+$$E[\mathbf{u}\mathbf{u}^{\prime}|\mathbf{X}]=\left[
+\begin{array}
+[c]{cccc}%
+E[u_{1}^{2}|\mathbf{X}] & E[u_{1}u_{2}|\mathbf{X}] & \cdots & E[u_{1}%
+u_{n}|\mathbf{X}]\\
+E[u_{2}u_{1}|\mathbf{X}] & E[u_{2}^{2}|\mathbf{X}] & \cdots & E[u_{2}%
+u_{n}|\mathbf{X}]\\
+E[u_{3}u_{1}|\mathbf{X}] & E[u_{3}u_{2}|\mathbf{X}] & \cdots & E[u_{3}%
+u_{n}|\mathbf{X}]\\
+\vdots & \vdots & \ddots & \vdots\\
+E[u_{n}u_{1}|\mathbf{X}] & E[u_{n}u_{2}|\mathbf{X}] & \cdots & E[u_{n}%
+^{2}|\mathbf{X}]
+\end{array}
+\right]  =\Omega$$
 \end{document}
