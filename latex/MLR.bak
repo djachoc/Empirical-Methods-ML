@@ -1,0 +1,70 @@
+\documentclass{article}%
+\usepackage{amsmath}%
+\setcounter{MaxMatrixCols}{30}%
+\usepackage{amsfonts}%
+\usepackage{amssymb}%
+\usepackage{graphicx}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{Created=Saturday, November 09, 2019 14:35:30}
+%TCIDATA{LastRevised=Saturday, November 09, 2019 14:44:29}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\begin{document}
+$%
+\begin{array}
+[c]{c}%
+y_{1}=\beta_{0}+\beta_{1}x_{1,1}+\cdots+\beta_{k}x_{1,k}+u_{1}\\
+y_{2}=\beta_{0}+\beta_{1}x_{2,1}+\cdots+\beta_{k}x_{2,k}+u_{2}\\
+y_{3}=\beta_{0}+\beta_{1}x_{3,1}+\cdots+\beta_{k}x_{3,k}+u_{3}\\
+\vdots\\
+y_{n}=\beta_{0}+\beta_{1}x_{n,1}+\cdots+\beta_{k}x_{n,k}+u_{n}%
+\end{array}
+$ or equivalently $\left[
+\begin{array}
+[c]{c}%
+y_{1}\\
+y_{2}\\
+y_{3}\\
+\vdots\\
+y_{n}%
+\end{array}
+\right]  =\left[
+\begin{array}
+[c]{cccc}%
+1 & x_{1,1} & \cdots & x_{1,k}\\
+1 & x_{2,1} & \cdots & x_{2,k}\\
+1 & x_{3,1} & \cdots & x_{3,k}\\
+\vdots & \vdots & \ddots & \vdots\\
+1 & x_{n,1} & \cdots & x_{n,k}%
+\end{array}
+\right]  $
+\end{document}
