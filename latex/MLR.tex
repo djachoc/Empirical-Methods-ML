@@ -8,7 +8,7 @@
 %TCIDATA{Version=5.50.0.2953}
 %TCIDATA{CSTFile=40 LaTeX article.cst}
 %TCIDATA{Created=Saturday, November 09, 2019 14:35:30}
-%TCIDATA{LastRevised=Saturday, November 09, 2019 15:57:36}
+%TCIDATA{LastRevised=Sunday, November 10, 2019 09:41:53}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
@@ -96,9 +96,10 @@ E[u_{n}|\mathbf{X}]
 \vdots\\
 0
 \end{array}
-\right]  $
+\right]  $%
 
-$$E[\mathbf{u}\mathbf{u}^{\prime}|\mathbf{X}]=\left[
+\[
+E[\mathbf{u}\mathbf{u}^{\prime}|\mathbf{X}]=\left[
 \begin{array}
 [c]{cccc}%
 E[u_{1}^{2}|\mathbf{X}] & E[u_{1}u_{2}|\mathbf{X}] & \cdots & E[u_{1}%
@@ -111,5 +112,63 @@ u_{n}|\mathbf{X}]\\
 E[u_{n}u_{1}|\mathbf{X}] & E[u_{n}u_{2}|\mathbf{X}] & \cdots & E[u_{n}%
 ^{2}|\mathbf{X}]
 \end{array}
-\right]  =\Omega$$
+\right]  =\Omega
+\]
+
+
+\bigskip
+
+Ordinary Least Squares (OLS) Estimator
+
+\bigskip
+
+Define the residual sum of squares (RSS) as a function of any candiate guess,
+$\mathbf{b}=[b_{0},b_{1},\cdots,b_{k}]^{\prime}$, for the unknown $[\beta
+_{0},\beta_{1},\beta_{2},\cdots,\beta_{k}]^{\prime}\equiv\mathbf{\beta}$,
+i.e.,%
+\[
+RSS(\mathbf{b})=\Sigma_{i=1}^{n}(y_{1}-b_{0}-b_{1}x_{1}-b_{2}x_{2}%
+-\cdots-b_{k}x_{k})^{2}=(\mathbf{y}-\mathbf{Xb})^{\prime}(\mathbf{y}%
+-\mathbf{Xb})
+\]
+By standard matrix calculus one has%
+\[
+\frac{\partial RSS(\mathbf{b})}{\partial\mathbf{b}}=\left[
+\begin{array}
+[c]{c}%
+\partial RSS(\mathbf{b})/\partial b_{0}\\
+\partial RSS(\mathbf{b})/\partial b_{1}\\
+\partial RSS(\mathbf{b})/\partial b_{2}\\
+\vdots\\
+\partial RSS(\mathbf{b})/\partial b_{k}%
+\end{array}
+\right]  =-2\mathbf{X}^{\prime}(\mathbf{y}-\mathbf{Xb})\text{, and }%
+\frac{\partial^{2}RSS(\mathbf{b})}{\partial\mathbf{b}\partial\mathbf{b}%
+^{\prime}}=\left[
+\begin{array}
+[c]{cccc}%
+\partial^{2}RSS(\mathbf{b})/\partial b_{0}^{2} & \partial^{2}RSS(\mathbf{b}%
+)/\partial b_{0}\partial b_{1} & \cdots & \partial^{2}RSS(\mathbf{b})/\partial
+b_{0}\partial b_{k}\\
+\partial^{2}RSS(\mathbf{b})/\partial b_{1}\partial b_{0} & \partial
+^{2}RSS(\mathbf{b})/\partial b_{1}^{2} & \cdots & \partial^{2}RSS(\mathbf{b}%
+)/\partial b_{1}\partial b_{k}\\
+\partial^{2}RSS(\mathbf{b})/\partial b_{2}\partial b_{0} & \partial
+^{2}RSS(\mathbf{b})/\partial b_{2}\partial b_{1} & \cdots & \partial
+^{2}RSS(\mathbf{b})/\partial b_{2}\partial b_{k}\\
+\vdots & \vdots & \ddots & \vdots\\
+\partial^{2}RSS(\mathbf{b})/\partial b_{k}\partial b_{0} & \partial
+^{2}RSS(\mathbf{b})/\partial b_{k}\partial b_{1} & \cdots & \partial
+^{2}RSS(\mathbf{b})/\partial b_{k}^{2}%
+\end{array}
+\right]  =2\mathbf{X}^{\prime}\mathbf{X}\text{,}%
+\]
+where $\mathbf{X}^{\prime}\mathbf{X}$ is a positive definite matrix by
+Assumption MLR.3. Therefore $\left.  \frac{\partial RSS(\mathbf{b})}%
+{\partial\mathbf{b}}\right\vert _{\mathbf{b}=\widehat{\mathbf{\beta}}%
+}=\mathbf{0}$ defines a maxima, i.e., $\widehat{\mathbf{\beta}}=(\mathbf{X}%
+^{\prime}\mathbf{X})^{-1}\mathbf{X}^{\prime}\mathbf{y}$. Here we have used the
+notation $\mathbf{A}^{-1}$ denotes the inverse of a matrix $\mathbf{A}$.
+
+
 \end{document}
