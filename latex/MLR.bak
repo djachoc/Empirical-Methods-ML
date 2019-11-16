@@ -8,7 +8,7 @@
 %TCIDATA{Version=5.50.0.2953}
 %TCIDATA{CSTFile=40 LaTeX article.cst}
 %TCIDATA{Created=Saturday, November 09, 2019 14:35:30}
-%TCIDATA{LastRevised=Sunday, November 10, 2019 09:39:10}
+%TCIDATA{LastRevised=Sunday, November 10, 2019 09:41:53}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
@@ -164,7 +164,11 @@ b_{0}\partial b_{k}\\
 \right]  =2\mathbf{X}^{\prime}\mathbf{X}\text{,}%
 \]
 where $\mathbf{X}^{\prime}\mathbf{X}$ is a positive definite matrix by
-Assumption MLR.3.
+Assumption MLR.3. Therefore $\left.  \frac{\partial RSS(\mathbf{b})}%
+{\partial\mathbf{b}}\right\vert _{\mathbf{b}=\widehat{\mathbf{\beta}}%
+}=\mathbf{0}$ defines a maxima, i.e., $\widehat{\mathbf{\beta}}=(\mathbf{X}%
+^{\prime}\mathbf{X})^{-1}\mathbf{X}^{\prime}\mathbf{y}$. Here we have used the
+notation $\mathbf{A}^{-1}$ denotes the inverse of a matrix $\mathbf{A}$.
 
 
 \end{document}

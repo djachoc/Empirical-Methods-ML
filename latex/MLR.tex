@@ -8,7 +8,7 @@
 %TCIDATA{Version=5.50.0.2953}
 %TCIDATA{CSTFile=40 LaTeX article.cst}
 %TCIDATA{Created=Saturday, November 09, 2019 14:35:30}
-%TCIDATA{LastRevised=Sunday, November 10, 2019 09:41:53}
+%TCIDATA{LastRevised=Saturday, November 16, 2019 09:40:29}
 %TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
 %TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
 %TCIDATA{BibliographyScheme=Manual}
@@ -170,5 +170,29 @@ Assumption MLR.3. Therefore $\left.  \frac{\partial RSS(\mathbf{b})}%
 ^{\prime}\mathbf{X})^{-1}\mathbf{X}^{\prime}\mathbf{y}$. Here we have used the
 notation $\mathbf{A}^{-1}$ denotes the inverse of a matrix $\mathbf{A}$.
 
+\bigskip%
 
-\end{document}
+\[
+n^{-1}\mathbf{V}_{\boldsymbol{\beta}}=\left[
+\begin{array}
+[c]{cccc}%
+\text{asy. var}(\widehat{\beta}_{0}) & \text{asy. cov}(\widehat{\beta}%
+_{0},\widehat{\beta}_{1}) & \cdots & \text{asy. cov}(\widehat{\beta}%
+_{0},\widehat{\beta}_{k})\\
+\text{asy. cov}(\widehat{\beta}_{1},\widehat{\beta}_{0}) & \text{asy.
+var}(\widehat{\beta}_{1}) & \cdots & \text{asy. cov}(\widehat{\beta}%
+_{1},\widehat{\beta}_{k})\\
+\text{asy. cov}(\widehat{\beta}_{2},\widehat{\beta}_{0}) & \text{asy.
+cov}(\widehat{\beta}_{2},\widehat{\beta}_{1}) & \cdots & \text{asy.
+cov}(\widehat{\beta}_{2},\widehat{\beta}_{k})\\
+\vdots & \vdots & \ddots & \vdots\\
+\text{asy. cov}(\widehat{\beta}_{k},\widehat{\beta}_{0}) & \text{asy.
+cov}(\widehat{\beta}_{k},\widehat{\beta}_{1}) & \cdots & \text{asy.
+var}(\widehat{\beta}_{k})
+\end{array}
+\right]
+\]
+
+
+
+\end{document} 
