@@ -42,11 +42,11 @@ All the materials in this repository are taken from these four sources and the o
 
 <img src="img/notebooks_azure_my_projects.png" alt="drawing" width="500"/>
 
-5. Use "djachoc/Empirical-Methods-ML" as **GitHub repository** and "Empirical-Methods-ML" as **Project Name**. Then press import and wait (it will take a minute or two).
+6. Use "djachoc/Empirical-Methods-ML" as **GitHub repository** and "Empirical-Methods-ML" as **Project Name**. Then press import and wait (it will take a minute or two).
 
 <img src="img/notebooks_azure_github.png" alt="drawing" width="500"/>
 
-6. You should now see this page
+7. You should now see this page
 
 <img src="img/notebooks_azure_final.png" alt="drawing" width="500"/>
 
