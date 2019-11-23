@@ -1,0 +1,4 @@
+To get the latest jupyter notebooks do the following:
+
+cd library
+git pull --all
