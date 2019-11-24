@@ -26,7 +26,7 @@ All the materials in this repository are taken from these four sources and the o
 
 <img src="img/notebooks_azure.png" alt="drawing" width="500"/>
 
-2. Sign in using your 'your_own_email<span style="color:red">@outlook.com</span>' If you don't have one create one beforehand. You must hit 'Yes.'
+2. Sign in using your 'your_emory_email<span style="color:blue">@emory.edu</span>' or 'your_own_email<span style="color:red">@outlook.com</span>' - If you don't have one create one beforehand. You must hit 'Yes' afterwards.
 
 <img src="img/notebooks_azure_sign_in.png" alt="drawing" width="500"/>
 
